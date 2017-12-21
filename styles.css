@@ -17,7 +17,7 @@ header{
 }
 
 section {
-    padding: 50px 0;
+    padding: 35px 0;
 }
 .format{
     font-size: 16px;
@@ -25,18 +25,29 @@ section {
     line-height: 1.45;
 }
 p{
-/*
-    font-size: 16px;
-    color: #555;
-    line-height: 1.45;
-    
+
 */
-    color: #576366;
+    /* color: #576366; */
+    color: #4b555e;
     font-size: 16px;
-/*    line-height: 1.6;*/
+    line-height: 1.6;
+/*
     margin-top: 10px;
     margin-bottom: 20px;
+*/
     text-align: justify;
+    margin: 0 0 10px;
+        display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+h3{
+    color: #2d353c;
+    line-height: 1.5;
+    font-weight: bold;
 }
 
 h2:after {
@@ -48,9 +59,9 @@ h2:after {
     background: #ccc;
 }
 .sol{
-/*  background: url(img.jpg);*/
+/*  background: url(img/demo.jpg);*/
   background-color: #2c2929;
-  background-size: cover; 
+  background-size: cover;
 }
 .navbar {
     margin-bottom: 0;
@@ -95,7 +106,7 @@ h1{
 }
 .img-circle {
     border-radius: 50%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .img-responsive {
     display: block;
@@ -111,9 +122,11 @@ h1{
 }
 .people_heading{
     color: #a94442;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 2.8rem;
+    font-weight: 500;
     text-align: left;
+    line-height: 1.5;
+    text-transform: capitalize;
 }
 .people_name{
     font-size: 15px;
@@ -127,33 +140,13 @@ h1{
 .thumbnail img {
     width: 100%;
 }
-.thumbnail .caption{
-    border-radius: 5px;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: white;
-}
-.thumbnail:hover .overlay {
-  opacity: 1;
-  border: 2px solid #a94442; 
-}
 .text {
   color: black;
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.2
+}
+.project_title{
+  color: black;
 }
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -163,12 +156,12 @@ h1{
 }
 li.dropdown:hover > .dropdown-menu {
     display: block;
-} 
+}
 ul.nav a:focus { color: #a94442 !important; }
 
 ul.nav a:hover { color: #a94442 !important; }
 
-.bg-4 { 
+.bg-4 {
   background-color: #2f2f2f; /* Black Gray */
   color: #fff;
 }
@@ -244,4 +237,7 @@ ul.nav a:hover { color: #a94442 !important; }
 }
 .publish_block{
     padding-top: 50px;
+}
+.push_margin_left{
+  margin-left: 15px;
 }

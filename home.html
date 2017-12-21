@@ -10,16 +10,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-        
+
         <script>
-//          JQUERY Function to toggle the automated dropdown of the menus on hover 
+//          JQUERY Function to toggle the automated dropdown of the menus on hover
             $('ul.nav li.dropdown').hover(function() {
                   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
                 }, function() {
                   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
                 });
-            
-//            JQUERY Function for sliding effect 
+
+//            JQUERY Function for sliding effect
             $(document).on('click', 'a[href^="#"]', function (event) {
                 event.preventDefault();
 
@@ -30,12 +30,12 @@
         </script>
     </head>
     <body id="page_top">
-        
+
 <!--        Navigation Bar-->
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="#page_top" class="navbar-brand" style="color:#a94442">
+                    <a href="#page_top" class="navbar-brand" style="font-size:20px;color:#a94442;">
                         MINDS Research Group
                     </a>
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -47,16 +47,22 @@
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href ="#about">About</a>
+                            <a href ="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href ="#tweets">News</a>
                         </li>
                         <li class="dropdown">
-                            <a href ="#" class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
+                            <a href ="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#research">Big Mechanism (Cancer Research)</a></li>
                                     <li><a href="#research">SAFE (Geopolitical Events)</a></li>
                                     <li><a href="#research">EFFECT (Cybersecurity)</a></li>
                                     <li><a href="#research">Next Generation Social Science</a></li>
                                 </ul>
+                        </li>
+                        <li>
+                            <a href ="#people">People</a>
                         </li>
                         <li  class="dropdown" id="dd">
                             <a href ="#" class="dropdown-toggle" data-toggle="dropdown">Publications<b class="caret"></b></a>
@@ -68,19 +74,13 @@
                                 </ul>
                         </li>
                         <li>
-                            <a href ="#tweets">Tweets</a>
-                        </li>
-                        <li>
-                            <a href ="#people">People</a>
-                        </li>
-                        <li>
                             <a href ="#code_data">Code/Data</a>
                         </li>
                         <li>
-                            <a href ="#blog">Blog</a>
+                            <a href ="#join_us">Join Us</a>
                         </li>
                         <li>
-                            <a href ="#join_us">Join us</a>
+                            <a href ="#blog">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -89,168 +89,38 @@
 <!--        Main Header Cover Image and Title-->
         <header class="sol">
             <div class="container text-center">
-                <h1 class="animated fadeInUp">MINDS Research Group</h1>
-                <p class="lead animated fadeInUp">We deploy and develop machine learning algorithms to analyze data from a variety of applications, including social science, cybersecurity, and biomedical domains.</p>
+                <h2 class="lead animated fadeInUp">We deploy and develop machine learning algorithms to analyze data from a variety of applications, including social science, cybersecurity, and biomedical domains.</h2>
                 <img src="img/logo.png" height="40" weight="100">
             </div>
         </header>
-        
+
 <!--        Section About Us-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <article>
                         <section id = "about" class="text-center">
-                            <h2 class="animated fadeInUp">ABOUT US</h2>
-                            <p>The <b>M</b>achine <b>IN</b>telligence and <b>D</b>ata <b>S</b>cience research group is a part of the University of Southern California’s Information Sciences Institute, located in sunny Marina del Rey, CA. We deploy and develop machine learning algorithms to analyze data from a variety of applications, including social science, cybersecurity, and biomedical domains.<br><br></p>
-                                
+                            <h2 class="animated fadeInUp">About Us</h2>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>The <b>M</b>achine <b>IN</b>telligence and <b>D</b>ata <b>S</b>cience research group is a part of the University of Southern California’s Information Sciences Institute, located in sunny Marina del Rey, CA. We deploy and develop machine learning algorithms to analyze data from a variety of applications, including social science, cybersecurity, and biomedical domains.<br><br></p>
+
                             <p style="text-align:center"><b>We are currently hiring for several postdocs and internship positions!</b><br>Please see our list of openings <a href="#join_us">here</a></p>
+                                </div>
+                            </div>
                         </section>
                     </article>
                 </div>
             </div>
         </div>
-        
-<!--        Research Cores-->
-        <section id = "research" class="text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>RESEARCH</h2>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                        <div class="row">
-                            <div class="col-md-3 col-xs-6" id="big_mechanism">
-                                <a href="big_mechanism.html" target="_blank">
-                                    <div class="thumbnail">
-                                    <img src="https://minds.isi.edu/wp-content/uploads/2017/01/net-1-300x200.png" alt="" class="img-responsive">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            Automated Discovery of Cancer Pathway Models from Biomedical Text
-                                        </div>
-                                    </div>
-                                    <div class="caption">
-                                        <h4>Big Mechanism</h4>
-                                        <h5>(Cancer Research)</h5> 
-                                    </div>
-                                  </div>
-                                </a>
-                                
-                            </div>
-                            <div class="col-sm-3 col-xs-6" id="safe">
-                                <a href="safe.html">
-                                <div class="thumbnail">
-                                    <img src="https://minds.isi.edu/wp-content/uploads/2017/01/twitter-e1484596212468-300x200.jpg" alt="" class="img-responsive">
-                                        <div class="overlay">
-                                            <div class="text">
-                                                Forecasting Significant Geopolitical Events
-                                            </div>
-                                        </div>
-                                      <div class="caption">
-                                        <h4>SAFE</h4>
-                                        <h5>(Geopolitical Events)</h5> 
-                                      </div>
-                                  </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-6" id="effect">
-                                <a href="effect.html">
-                                <div class="thumbnail">
-                                    <img src="https://minds.isi.edu/wp-content/uploads/2017/01/health-e1484599709493-300x200.jpg" alt="" class="img-responsive">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            Anticipating Large-Scale Cybersecurity Breaches
-                                        </div>
-                                    </div>
-                                      <div class="caption">
-                                        <h4>EFFECT</h4>
-                                        <h5>(Cybersecurity)</h5>
-                                      </div>
-                                  </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-xs-6" id ="nextgen_social_science">
-                                <a href="next_gen_social_sci.html">
-                                <div class="thumbnail">
-                                    <img src="https://minds.isi.edu/wp-content/uploads/2017/01/cyber-300x200.jpg" alt="" class="img-responsive">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            The Big K: Automatically Discovering the Most Informative Factors in Social Phenomena
-                                        </div>
-                                    </div>
-                                      <div class="caption">
-                                        <h4>Next Generation Social Science</h4>
-                                      </div>
-                                  </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-<!--        Publications-->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <article>
-                    <section id = "publications" class="text-center">
-                        <h2>PUBLICATIONS</h2>
-                        <div class="publish_block" id="machine_learning">
-                        <h1 class="people_heading" >Machine Learning</h1>
-                            <p>Our group uses machine learning across a variety of applications, but recently, a main thrust of theoretical work has revolved around developing information theoretic methods.</p>
-                            <p>Mutual information is among the most powerful and general measures of the relationship between random variables, but it’s effectiveness in machine learning has been limited by -
-                            <p>a) The difficulty of measuring entropy and mutual information in high dimensions (see <a href="https://arxiv.org/pdf/1508.00536" target="_blank">UAI-15</a>, <a href="http://www.jmlr.org/proceedings/papers/v38/gao15.pdf" target="_blank">AISTATS-15</a>, <a href="http://papers.nips.cc/paper/6443-variational-information-maximization-for-feature-selection.pdf" target="_blank">NIPS-16</a>)</p>
-                                    <p>b) Frequent misuse of (pairwise) mutual information (e.g. <a href="http://www.jmlr.org/proceedings/papers/v32/steeg14.pdf" target="_blank">ICML-14</a>).</p>
-                            <p>It can be difficult to even define meaningful information measures for the interaction of variables in high dimensions.</p>
-                            <p>We have taken steps toward formalizing the use of multi-variate mutual information objectives for unsupervised learning. The method of Correlation Explanation (<a href="http://www.jmlr.org/proceedings/papers/v38/versteeg15.pdf" target="_blank">AISTATS-15</a>, <a href="http://papers.nips.cc/paper/5580-discovering-structure-in-high-dimensional-data-through-correlation-explanation.pdf" target="_blank">NIPS-14</a>) provides an information-theoretic foundation for modularly and hierarchically decomposing information in complex systems. Information may be extracted incrementally using the “information sieve” method (<a href="https://arxiv.org/pdf/1507.02284v3" target="_blank">ICML-16</a>), and its <a href="https://arxiv.org/pdf/1606.02307" target="_blank">extension for continuous variables</a>.</p>
-                            <p>These methods have found applications in gene expression (<a href="https://minds-isi.000webhostapp.com/2016/10/04/cancer-in-the-time-of-algorithms-2/" target="_blank">interesting podcast and article about this work</a>), brain imaging, text analysis, and psychometrics.</p>
-                            <p>Code for Correlation Explanation and the Information Sieve can be found <a href="https://github.com/gregversteeg" target="_blank">here</a>.</p>
-                            
-<!--                            Bibtex Script-->
-                            <script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fmachine_learning.bib&jsonp=1"></script>
-                        </div>
-                        <div class="publish_block" id="social">
-                        <h1 class="people_heading">Computational Social Science</h1>
-                            <p>Our society is becoming increasingly dependent on various technological networks, particularly in the realm of social media. As these networks evolve and grow in complexity, their dynamical behavior is becoming difficult to understand and predict. We design machine-learning frameworks to model and predict individual , characterize information diffusion, predict crime and abuse, and ultimately understand human behavior. We hope that insights generated from this data can be used to support informed decision making and implementation in the social and political sciences.</p>
-                            <p>Emilio’s site, including <a href="http://www.emilio.ferrara.name/category/papers/" target="_blank">blog posts</a> with paper summaries, is a great resource for this line of work. Also, we are hiring postdocs! See our <a href="#join_us">Join Us</a> page and contact us by email if interested.</p>
-                            <script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fsocial.bib&jsonp=1"></script>
-                        </div>
-                        
-                        <div class="publish_block" id="biomed">
-                        <h1 class="people_heading">Biomedical Applications</h1>
-                            <p>While our group is always looking for interesting data sets, we have found the machine learning in the biomedical domain to be particularly fruitful. Several paths of inquiry have included developing more advanced network models of brain connectivity, extracting biomolecular interaction knowledge from research texts, and using recurrent neural networks to find meaningful patterns for diagnosis in clinical time series data.</p>
-                            <p>Other links of interest include: <a href="http://localhost/ISI/big_mechanism.html" target="_blank">Big Mechanism project description</a></p>
-                            <p><a href="https://minds.isi.edu/2016/10/04/cancer-in-the-time-of-algorithms-2/" target="_blank">Cancer in the Time of Algorithms</a> for blog post, news article, and podcast about Greg Ver Steeg and Shirley Pepke’s inspiring work identifying signals in gene expression data for patients with ovarian cancer, a disease Pepke herself is fighting.</p>
-                            <p>Dan presents his work, <a href="https://youtu.be/HobRGyTOUQs?t=47m37s" target="_blank">“A Continuous Model of Cortical Connectivity”</a> , for which he won the Young Scientist award at MICCAI!</p>
-                            <p>The <a href="http://mucmd.org" target="_blank">Machine Learning in Health Care symposium</a>, for which Dave Kale is an organizer.</p>
-                            
-                            <!--                            Bibtex Script-->
-                            <script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fbiomedical.bib&jsonp=1"></script>
-                        </div>
-                        
-                        <div class="publish_block" id="forecasting">
-                        <h1 class="people_heading">Forecasting</h1>
-                            <p>Real-world events can often be viewed as salient outcomes of interactions between sets of latent spatiotemporal processes that reflect behaviors of individuals and of populations, along with the evolution of environmental factors. We seek to develop advanced, automated methods of consolidating the vast amount of available data into predictions of meaningful events. This involves integrating information from a range of sources, modeling their interactions over time, and making inferences about significant patterns and/or anomalies.</p>
-                            <p>Two examples of projects in this domain include <a href="http://localhost/ISI/safe.html">SAFE</a>, where we are developing a suite of methods for forecasting geopolitical events, and <a href="http://localhost/ISI/effect.html">EFFECT</a>, where we are developing an end-to-end system for detecting cyber security vulnerabilities and predicting the timing and targets of attacks.</p>
-                            
-                            <!--                            Bibtex Script-->
-                            <script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fforecasting.bib&jsonp=1"></script>
-                        </div>
 
-        </section>
-                    </article>
-                </div>
-                    </div>
-        </div>
-        
 <!--        Twitter Section-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <article>
                         <section id = "tweets" class="text-center">
-                            <h2>TWEETS</h2>
+                            <h2>News</h2>
                             <div style="height:470px;width:100%;border:1px solid #ccc;font-family: Georgia, Garamond, Serif;overflow:auto;">
 <!--                                Twitter Embeded Script-->
                                 <a class="twitter-timeline" href="https://twitter.com/ISI_AI?ref_src=twsrc%5Etfw">Tweets by ISI_AI</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -260,441 +130,634 @@
                 </div>
             </div>
         </div>
-        
-<!--        People Section-->
-        <section id = "people" class="text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <h2>PEOPLE</h2>
-                        <hr>
-                        <div class="row text-center">
-                            <h1 class="people_heading">FACULTY</h1>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www.isi.edu/~galstyan/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/aram.png');"></div>
-                                        <div class="people_name">
-                                            Aram Galstyan
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Research Associate Professor
+
+        <!--        Research Cores-->
+                <!-- <section id = "research" class="text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>PROJECTS</h2>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-6" id="big_mechanism">
+                                        <a href="big_mechanism.html" target="_blank">
+                                            <div class="thumbnail">
+                                            <img src="img/cancer.png" alt="" class="img-responsive">
+                                            <div class="overlay">
+                                                <div class="text">
+                                                    Automated Discovery of Cancer Pathway Models from Biomedical Text
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <h4>Big Mechanism</h4>
+                                                <h5>(Cancer Research)</h5>
+                                            </div>
+                                          </div>
+                                        </a>
+
                                     </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www.isi.edu/integration/people/lerman/index.html" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/KLerman.jpg');"></div>
-                                        <div class="people_name">
-                                            Kristina Lerman
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Research Associate Professor
+                                    <div class="col-sm-3 col-xs-6" id="safe">
+                                        <a href="safe.html">
+                                        <div class="thumbnail">
+                                            <img src="https://minds.isi.edu/wp-content/uploads/2017/01/twitter-e1484596212468-300x200.jpg" alt="" class="img-responsive">
+                                                <div class="overlay">
+                                                    <div class="text">
+                                                        Forecasting Significant Geopolitical Events
+                                                    </div>
+                                                </div>
+                                              <div class="caption">
+                                                <h4>SAFE</h4>
+                                                <h5>(Geopolitical Events)</h5>
+                                              </div>
+                                          </div>
+                                        </a>
                                     </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www.emilio.ferrara.name/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/emilio.jpg');"></div>
-                                        <div class="people_name">
-                                            Emilio Ferrara
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Research Assistant Professor
+                                    <div class="col-sm-3 col-xs-6" id="effect">
+                                        <a href="effect.html">
+                                        <div class="thumbnail">
+                                            <img src="img/cybersecurity.png" alt="" class="img-responsive">
+                                            <div class="overlay">
+                                                <div class="text">
+                                                    Anticipating Large-Scale Cybersecurity Breaches
+                                                </div>
+                                            </div>
+                                              <div class="caption">
+                                                <h4>EFFECT</h4>
+                                                <h5>(Cybersecurity)</h5>
+                                              </div>
+                                          </div>
+                                        </a>
                                     </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www.isi.edu/people/gregv/about" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/greg.jpg');"></div>
-                                        <div class="people_name">
-                                            Greg Ver Steeg
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Research Assistant Professor
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row text-center">
-                            <h1 class="people_heading">RESEARCHERS</h1>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="https://isi.edu/~fredmors/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/fred.jpg');"></div>
-                                        <div class="people_name">
-                                            Fred Morstatter
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Computer Scientist 
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="https://sites.google.com/site/ksmthossain/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/tozammel.jpg');"></div>
-                                        <div class="people_name">
-                                            Tozammel Hossain
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Postdoctoral Associate 
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="https://www.linkedin.com/in/homa-hosseinmardi-4a704538/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/homa.jpg');"></div>
-                                        <div class="people_name">
-                                            Homa Hosseinmardi
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Postdoctoral Associate
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www.annasapienza.it/" target="_blank">
-                                        
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/anna.jpg');"></div>
-                                        <div class="people_name">
-                                            Anna Sapienza
-                                        </div>
-                                    </a>
-                                    <div class="people_title">
-                                        Postdoctoral Associate 
+                                    <div class="col-sm-3 col-xs-6" id ="nextgen_social_science">
+                                        <a href="next_gen_social_sci.html">
+                                        <div class="thumbnail">
+                                            <img src="img/teamwork.png" alt="" class="img-responsive">
+                                            <div class="overlay">
+                                                <div class="text">
+                                                    The Big K: Automatically Discovering the Most Informative Factors in Social Phenomena
+                                                </div>
+                                            </div>
+                                              <div class="caption">
+                                                <h4>Next Generation Social Science</h4>
+                                              </div>
+                                          </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <hr>
-                        <div class="row text-center">
-                            <h1 class="people_heading">PHD STUDENTS</h1>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/nazanin.jpeg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Nazanin AlipourFard
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/adam.jpg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Adam Badawy
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('https://minds.isi.edu/wp-content/uploads/2017/01/passport-new-1-150x150.png');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Rob Brekelmans
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="https://www.linkedin.com/in/ashok-deb-312a7019/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/ashok.jpg');"></div>
-                                        <div class="people_name">
-                                            Ashok Deb
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://billgao.weebly.com/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/shuyang.jpg');"></div>
-                                        <div class="people_name">
-                                            Shuyang Gao
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www-scf.usc.edu/~sahilgar/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/sahil.jpg');"></div>
-                                        <div class="people_name">
-                                            Sahil Garg
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/sarik.jpg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Sarik Ghazarian
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/palash.jpg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Palash Goyal
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www-scf.usc.edu/~dkale/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/dave.jpg');"></div>
-                                        <div class="people_name">
-                                            Dave Kale
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="https://www.linkedin.com/in/hsientekao/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/hsiente.jpg');"></div>
-                                        <div class="people_name">
-                                            Hsien-Te Kao 
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www-scf.usc.edu/~wenzheli/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/wenzhe_pic.png');"></div>
-                                        <div class="people_name">
-                                            Wenzhe Li 
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/neal.jpg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Neal Lawton
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www-scf.usc.edu/~moyerd/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/dan.jpg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Dan Moyer
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="https://github.com/Akira55" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/akira.jpeg');"></div>
-                                        <div class="people_name">
-                                            Akira Matsui
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="http://www-scf.usc.edu/~reing/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/kyle.jpg');"></div>
-                                        <div class="people_name">
-                                            Kyle Reing
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/serban.jpg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Serban Stan
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-0">
-                                
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="#">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/nazgol.jpg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Nazgol Tavabi
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6">
-                                <div class="name_card">
-                                    <a href="https://www.linkedin.com/in/yilei-zeng-958766a9/" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/yilei.jpeg');"></div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="people_name">
-                                            Yilei Zeng 
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-0">
-                                
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row text-center">
-                            <h1 class="people_heading">ALUMNI</h1>
-                            <div></div>
-                            <div class="col-md-3 col-xs-6">
-                            <div class="name_card">
-                                    <a href="https://alessandrobessi.github.io/index.html" target="_blank">
-                                        <div  class="ratio img-responsive img-circle" style="background-image: url('img/alessandro.jpg');"></div>
-<!--                                        <img src="img/alessandro.jpg">-->
-                                        <div class="people_name">
-                                            Alessandro Bessi
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-6"></div>
-                            <div class="col-md-3 col-xs-0"></div>
-                            <div class="col-md-3 col-xs-0"></div>
                         </div>
                     </div>
-                    <div class="col-md-1"></div>
-                </div>
+                </section> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <article>
+                <section id = "research" class="text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Projects</h2>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-6" id="big_mechanism">
+                                        <a href="big_mechanism.html" target="_blank">
+                                          <div class="project_card">
+                                            <img src="img/cancer.png" alt="" class="img-responsive">
+                                            <h4 class="project_title">Big Mechanism</h4>
+                                            <h5 class="project_title">(Cancer Research)</h5>
+                                            <p class="text">Automated discovery of cancer pathway models from biomedical text</p>
+                                          </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6" id="safe">
+                                        <a href="safe.html">
+                                          <div class="project_card">
+                                            <img src="img/effect.png" alt="" class="img-responsive">
+                                            <h4 class="project_title">SAFE</h4>
+                                            <h5 class="project_title">(Geopolitical Events)</h5>
+                                            <p class="text">Forecasting significant geopolitical events</p>
+                                          </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6" id="effect">
+                                        <a href="effect.html">
+                                          <div class="project_card">
+                                            <img src="img/cybersecurity.png" alt="" class="img-responsive">
+                                            <h4 class="project_title">EFFECT</h4>
+                                            <h5 class="project_title">(Cybersecurity)</h5>
+                                            <p class="text">Anticipating large-scale cybersecurity breaches</p>
+                                          </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6" id ="nextgen_social_science">
+                                        <a href="next_gen_social_sci.html">
+                                          <div class="project_card">
+                                            <img src="img/teamwork.png" alt="" class="img-responsive">
+                                            <h4 class="project_title">Next Generation Social Science</h4>
+                                            <p class="text">The Big K: Automatically discovering the most informative factors in social phenomena</p>
+                                          </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+              </article>
             </div>
-        </section>
-        
+        </div>
+        </div>
+
+        <!--        People Section-->
+                <section id = "people" class="text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <h2>People</h2>
+                                <hr>
+                                <div class="row text-center">
+                                    <h1 class="people_heading">Faculty</h1>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www.isi.edu/~galstyan/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/aram.png');"></div>
+                                                <div class="people_name">
+                                                    Aram Galstyan
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Research Associate Professor
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www.isi.edu/integration/people/lerman/index.html" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/KLerman.jpg');"></div>
+                                                <div class="people_name">
+                                                    Kristina Lerman
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Research Associate Professor
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www.emilio.ferrara.name/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/emilio.jpg');"></div>
+                                                <div class="people_name">
+                                                    Emilio Ferrara
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Research Assistant Professor
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www.isi.edu/people/gregv/about" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/greg.jpg');"></div>
+                                                <div class="people_name">
+                                                    Greg Ver Steeg
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Research Assistant Professor
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row text-center">
+                                    <h1 class="people_heading">Researchers</h1>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="https://isi.edu/~fredmors/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/fred.jpg');"></div>
+                                                <div class="people_name">
+                                                    Fred Morstatter
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Computer Scientist
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="https://sites.google.com/site/ksmthossain/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/tozammel.jpg');"></div>
+                                                <div class="people_name">
+                                                    Tozammel Hossain
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Postdoctoral Associate
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="https://www.linkedin.com/in/homa-hosseinmardi-4a704538/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/homa.jpg');"></div>
+                                                <div class="people_name">
+                                                    Homa Hosseinmardi
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Postdoctoral Associate
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www.annasapienza.it/" target="_blank">
+
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/anna.jpg');"></div>
+                                                <div class="people_name">
+                                                    Anna Sapienza
+                                                </div>
+                                            </a>
+                                            <div class="people_title">
+                                                Postdoctoral Associate
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row text-center">
+                                    <h1 class="people_heading">PhD Students</h1>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/nazanin.jpeg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Nazanin AlipourFard
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/adam.jpg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Adam Badawy
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('https://minds.isi.edu/wp-content/uploads/2017/01/passport-new-1-150x150.png');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Rob Brekelmans
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="https://www.linkedin.com/in/ashok-deb-312a7019/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/ashok.jpg');"></div>
+                                                <div class="people_name">
+                                                    Ashok Deb
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://billgao.weebly.com/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/shuyang.jpg');"></div>
+                                                <div class="people_name">
+                                                    Shuyang Gao
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www-scf.usc.edu/~sahilgar/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/sahil.jpg');"></div>
+                                                <div class="people_name">
+                                                    Sahil Garg
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/sarik.jpg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Sarik Ghazarian
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/palash.jpg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Palash Goyal
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www-scf.usc.edu/~dkale/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/dave.jpg');"></div>
+                                                <div class="people_name">
+                                                    Dave Kale
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="https://www.linkedin.com/in/hsientekao/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/hsiente.jpg');"></div>
+                                                <div class="people_name">
+                                                    Hsien-Te Kao
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www-scf.usc.edu/~wenzheli/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/wenzhe_pic.png');"></div>
+                                                <div class="people_name">
+                                                    Wenzhe Li
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/neal.jpg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Neal Lawton
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www-scf.usc.edu/~moyerd/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/dan.jpg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Dan Moyer
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="https://github.com/Akira55" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/akira.jpeg');"></div>
+                                                <div class="people_name">
+                                                    Akira Matsui
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="http://www-scf.usc.edu/~reing/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/kyle.jpg');"></div>
+                                                <div class="people_name">
+                                                    Kyle Reing
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/serban.jpg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Serban Stan
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-0">
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="#">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/nazgol.jpg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Nazgol Tavabi
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="name_card">
+                                            <a href="https://www.linkedin.com/in/yilei-zeng-958766a9/" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/yilei.jpeg');"></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="people_name">
+                                                    Yilei Zeng
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-0">
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row text-center">
+                                    <h1 class="people_heading">Alumni</h1>
+                                    <div></div>
+                                    <div class="col-md-3 col-xs-6">
+                                    <div class="name_card">
+                                            <a href="https://alessandrobessi.github.io/index.html" target="_blank">
+                                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/alessandro.jpg');"></div>
+        <!--                                        <img src="img/alessandro.jpg">-->
+                                                <div class="people_name">
+                                                    Alessandro Bessi
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6"></div>
+                                    <div class="col-md-3 col-xs-0"></div>
+                                    <div class="col-md-3 col-xs-0"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </section>
+                <!--        Publications-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <article>
+                            <section id = "publications" class="text-center">
+                                <h2>Publications</h2>
+                                <div class="publish_block" id="machine_learning">
+                                <h2 class="people_heading">Machine Learning</h2>
+                                    <p>Our group uses machine learning across a variety of applications, but recently, a main thrust of theoretical work has revolved around developing information theoretic methods.</p>
+                                    <p>Mutual information is among the most powerful and general measures of the relationship between random variables, but it’s effectiveness in machine learning has been limited by -
+                                    <p>a) The difficulty of measuring entropy and mutual information in high dimensions (see <a href="https://arxiv.org/pdf/1508.00536" target="_blank">UAI-15</a>, <a href="http://www.jmlr.org/proceedings/papers/v38/gao15.pdf" target="_blank">AISTATS-15</a>, <a href="http://papers.nips.cc/paper/6443-variational-information-maximization-for-feature-selection.pdf" target="_blank">NIPS-16</a>)</p>
+                                            <p>b) Frequent misuse of (pairwise) mutual information (e.g. <a href="http://www.jmlr.org/proceedings/papers/v32/steeg14.pdf" target="_blank">ICML-14</a>).</p>
+                                    <p>It can be difficult to even define meaningful information measures for the interaction of variables in high dimensions.</p>
+                                    <p>We have taken steps toward formalizing the use of multi-variate mutual information objectives for unsupervised learning. The method of Correlation Explanation (<a href="http://www.jmlr.org/proceedings/papers/v38/versteeg15.pdf" target="_blank">AISTATS-15</a>, <a href="http://papers.nips.cc/paper/5580-discovering-structure-in-high-dimensional-data-through-correlation-explanation.pdf" target="_blank">NIPS-14</a>) provides an information-theoretic foundation for modularly and hierarchically decomposing information in complex systems. Information may be extracted incrementally using the “information sieve” method (<a href="https://arxiv.org/pdf/1507.02284v3" target="_blank">ICML-16</a>), and its <a href="https://arxiv.org/pdf/1606.02307" target="_blank">extension for continuous variables</a>.</p>
+                                    <p>These methods have found applications in gene expression (<a href="https://minds-isi.000webhostapp.com/2016/10/04/cancer-in-the-time-of-algorithms-2/" target="_blank">interesting podcast and article about this work</a>), brain imaging, text analysis, and psychometrics.</p>
+                                    <p>Code for Correlation Explanation and the Information Sieve can be found <a href="https://github.com/gregversteeg" target="_blank">here</a>.</p>
+
+                <!--                            Bibtex Script-->
+                                    <div style="text-align:left"><script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fmachine_learning.bib&jsonp=1"></script></div>
+                                </div>
+                                <div class="publish_block" id="social">
+                                <h1 class="people_heading">Computational Social Science</h1>
+                                    <p>Our society is becoming increasingly dependent on various technological networks, particularly in the realm of social media. As these networks evolve and grow in complexity, their dynamical behavior is becoming difficult to understand and predict. We design machine-learning frameworks to model and predict individual , characterize information diffusion, predict crime and abuse, and ultimately understand human behavior. We hope that insights generated from this data can be used to support informed decision making and implementation in the social and political sciences.</p>
+                                    <p>Emilio’s site, including <a href="http://www.emilio.ferrara.name/category/papers/" target="_blank">blog posts</a> with paper summaries, is a great resource for this line of work. Also, we are hiring postdocs! See our <a href="#join_us">Join Us</a> page and contact us by email if interested.</p>
+                                    <div style="text-align:left"><script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fsocial.bib&jsonp=1"></script></div>
+                                </div>
+
+                                <div class="publish_block" id="biomed">
+                                <h1 class="people_heading">Biomedical Applications</h1>
+                                    <p>While our group is always looking for interesting data sets, we have found the machine learning in the biomedical domain to be particularly fruitful. Several paths of inquiry have included developing more advanced network models of brain connectivity, extracting biomolecular interaction knowledge from research texts, and using recurrent neural networks to find meaningful patterns for diagnosis in clinical time series data.</p>
+                                    <p>Other links of interest include: <a href="http://localhost/ISI/big_mechanism.html" target="_blank">Big Mechanism project description</a></p>
+                                    <p><a href="https://minds.isi.edu/2016/10/04/cancer-in-the-time-of-algorithms-2/" target="_blank">Cancer in the Time of Algorithms</a> for blog post, news article, and podcast about Greg Ver Steeg and Shirley Pepke’s inspiring work identifying signals in gene expression data for patients with ovarian cancer, a disease Pepke herself is fighting.</p>
+                                    <p>Dan presents his work, <a href="https://youtu.be/HobRGyTOUQs?t=47m37s" target="_blank">“A Continuous Model of Cortical Connectivity”</a> , for which he won the Young Scientist award at MICCAI!</p>
+                                    <p>The <a href="http://mucmd.org" target="_blank">Machine Learning in Health Care symposium</a>, for which Dave Kale is an organizer.</p>
+
+                                    <!--                            Bibtex Script-->
+                                    <div style="text-align:left"><script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fbiomedical.bib&jsonp=1"></script></div>
+                                </div>
+
+                                <div class="publish_block" id="forecasting">
+                                <h1 class="people_heading">Forecasting</h1>
+                                    <p>Real-world events can often be viewed as salient outcomes of interactions between sets of latent spatiotemporal processes that reflect behaviors of individuals and of populations, along with the evolution of environmental factors. We seek to develop advanced, automated methods of consolidating the vast amount of available data into predictions of meaningful events. This involves integrating information from a range of sources, modeling their interactions over time, and making inferences about significant patterns and/or anomalies.</p>
+                                    <p>Two examples of projects in this domain include <a href="http://localhost/ISI/safe.html">SAFE</a>, where we are developing a suite of methods for forecasting geopolitical events, and <a href="http://localhost/ISI/effect.html">EFFECT</a>, where we are developing an end-to-end system for detecting cyber security vulnerabilities and predicting the timing and targets of attacks.</p>
+
+                                    <!--                            Bibtex Script-->
+                                    <div style="text-align:left"><script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww-scf.usc.edu%2F%7Elmdmello%2Fforecasting.bib&jsonp=1"></script></div>
+                                </div>
+
+                </section>
+                            </article>
+                        </div>
+                            </div>
+                </div>
+
+
+
 <!--        Code Section-->
          <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <article>
                         <section id = "code_data" class="text-center">
-                            <h2>CODE</h2>
+                            <h2>Code</h2>
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                         </section>
                     </article>
                 </div>
             </div>
         </div>
-        
+
+        <!--        Join Us Section-->
+                <section id = "join_us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="text-center">Join Us</h2>
+                                <div class="col-md-6">
+                                    <h1 class="people_heading push_margin_left">Postdoctoral Positions</h1>
+                                    <div class="col-md-12">
+                                        <p>We are actively hiring postdocs for work in Computational Social Science! Please see the adjacent flier and reach out by email if interested.</p>
+                                    </div>
+                                <br>
+                                    <h1 class="people_heading push_margin_left">Internships</h1>
+                                    <div class="col-md-12">
+                                        <p>We are also actively looking for summer interns to join our group.
+        Please see our How to Apply and FAQ pages for more information. The following positions are in our group:</p>
+                                        <ul class="format">
+                                            <li><a href="https://www.isi.edu/join_us/summer_internships/openings/" target="_blank">Intelligent Systems – Computational Social Network Science</a></li>
+                                            <li><a href="https://www.isi.edu/join_us/summer_internships/openings/" target="_blank">Intelligent Systems – Social Media Analysis: Manipulation and Abuse Dynamics</a></li>
+                                            <li><a href="https://www.isi.edu/join_us/summer_internships/openings/" target="_blank">Intelligent Systems – Uncovering Latent Factors in Complex Systems</a></li>
+                                        </ul>
+                                    </div>
+                                <br>
+                                    <h1 class="people_heading push_margin_left">Prospective PhD Students</h1>
+                                    <div class="col-md-12">
+                                        <p>Please apply through the USC Computer Science department process described here. If you mention a professor from our group in your application, we will read and consider your application.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"><img class="img-responsive" src="img/isi%20hiring.png"></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
 <!--        Blog Section-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <article>
                         <section id = "blog" class="text-center">
-                            <h2>BLOG</h2>
+                            <h2>Blog</h2>
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                            
+
                              <p>The link to the blog is <a href="https://minds.isi.edu/blog/">here</a></p>
                         </section>
                     </article>
                 </div>
             </div>
         </div>
-        
-<!--        Join Us Section-->
-        <section id = "join_us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center">JOIN US</h2>
-                        <div class="col-md-6">
-                            <h1 class="people_heading">Post Doctoral Positions</h1>
-                            <div class="col-md-12">
-                                <p>We are actively hiring postdocs for work in Computational Social Science! Please see the adjacent flier and reach out by email if interested.</p>
-                            </div>
-                        <br>
-                            <h1 class="people_heading">Internships</h1>
-                            <div class="col-md-12">
-                                <p>We are also actively looking for summer interns to join our group.
-Please see our How to Apply and FAQ pages for more information. The following positions are in our group:</p>
-                                <ul class="format">
-                                    <li><a href="https://www.isi.edu/join_us/summer_internships/openings/" target="_blank">Intelligent Systems – Computational Social Network Science</a></li>
-                                    <li><a href="https://www.isi.edu/join_us/summer_internships/openings/" target="_blank">Intelligent Systems – Social Media Analysis: Manipulation and Abuse Dynamics</a></li>
-                                    <li><a href="https://www.isi.edu/join_us/summer_internships/openings/" target="_blank">Intelligent Systems – Uncovering Latent Factors in Complex Systems</a></li>
-                                </ul>
-                            </div>
-                        <br>
-                            <h1 class="people_heading">Prospective PhD Students</h1>
-                            <div class="col-md-12">
-                                <p>Please apply through the USC Computer Science department process described here. If you mention a professor from our group in your application, we will read and consider your application.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6"><img class="img-responsive" src="img/isi%20hiring.png"></div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Footer -->
         <footer class="container-fluid bg-4 text-center">
           <p style="text-align:center"><a href="#page_top">Back to Top</a></p>
