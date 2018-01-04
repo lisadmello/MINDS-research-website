@@ -25,16 +25,10 @@ section {
     line-height: 1.45;
 }
 p{
-
-*/
-    /* color: #576366; */
     color: #4b555e;
     font-size: 16px;
     line-height: 1.6;
-/*
-    margin-top: 10px;
-    margin-bottom: 20px;
-*/
+
     text-align: justify;
     margin: 0 0 10px;
         display: block;
@@ -43,7 +37,6 @@ p{
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
-
 h3{
     color: #2d353c;
     line-height: 1.5;
@@ -59,9 +52,18 @@ h2:after {
     background: #ccc;
 }
 .sol{
-/*  background: url(img/demo.jpg);*/
-  background-color: #2c2929;
-  background-size: cover;
+    background-color: #2c2929;
+     /* The image used */
+/*    background-image: url('img/back.jpg');*/
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .navbar {
     margin-bottom: 0;
@@ -72,7 +74,7 @@ h2:after {
     transition:500ms ease;
 }
 .scrolled{
-  background-color:#900;
+  background-color:#292f33;
   color: white;
 }
 .navbar-inverse .navbar-nav>li>a {
@@ -94,6 +96,48 @@ h1{
 .navbar-brand{
     color:#a94442;
 }
+.arrow-down{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.arrow-down::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    animation: 3s arrow infinite ease;
+    
+}
+
+@-webkit-keyframes arrow{
+    0%, 100% {
+        top: 50px;
+    }
+    50%{
+        top: 80px;
+    }
+}
+
+@keyframes arrow{
+    0%, 100% {
+        top: 50px;
+    }
+    50%{
+        top: 80px;
+    }
+}
+
 
 .lead{
     color:white;
