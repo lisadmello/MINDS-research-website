@@ -112,8 +112,8 @@ h1{
     right: 0;
     left: 0;
     bottom: 0;
-    border-right: 4px solid white;
-    border-bottom: 4px solid white;
+    border-right: 4px solid #bc0b0b;
+    border-bottom: 4px solid #bc0b0b;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     animation: 3s arrow infinite ease;
@@ -180,9 +180,9 @@ h1{
 .name_card:hover{
     transform: scale(1.1);
 }
-/* .people_title{
-  color: white;
-} */
+ .people_name{
+/*  color: white;*/
+} 
 
 .people_heading{
     color: #a94442;
@@ -194,6 +194,9 @@ h1{
 }
 .sub-heading{
     font-weight: 200;
+}
+.project_icon{
+     padding: 30px 70px 0px 70px;
 }
 .section1{
     padding: 30px 30px 0px 30px;
