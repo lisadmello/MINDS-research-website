@@ -11,6 +11,12 @@ a{
     -o-transition:      color 0.4s;
     transition:         color 0.4s;
 }
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
 header{
     padding: 100px 0;
 /*    height: 100vh;*/
@@ -68,6 +74,7 @@ h2:after {
 .navbar {
     margin-bottom: 0;
     border-bottom: none;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 .navbar-inverse{
     background-color: black;
@@ -231,6 +238,27 @@ h1{
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+}
+.custom-button{
+    
+    background-color: white;
+    border: 2px solid #bcbcbc;
+    color: grey;
+    padding:  10px;
+    width:  60%;
+    margin:  auto;
+    margin-top: 30px;
+    border-radius:  3px;
+    font-weight: 600;
+    -webkit-transition: color 0.4s;
+    -moz-transition:    color 0.4s;
+    -ms-transition:     color 0.4s;
+    -o-transition:      color 0.4s;
+    transition:         color 0.4s;
+
+}
+.custom-button:hover{
+    color: black;
 }
 
 .thumbnail {
