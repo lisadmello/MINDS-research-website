@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MINDS Research Group (USC Information Sciences Institute)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="profile.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="nav_shrink.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+        <script>
+//          JQUERY Function to toggle the automated dropdown of the menus on hover
+            $('ul.nav li.dropdown').hover(function() {
+                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+                }, function() {
+                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                });
+
+//            JQUERY Function for sliding effect
+            $(document).on('click', 'a[href^="#"]', function (event) {
+                event.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500);
+            });
+        </script>
+    </head>
+    <body id="page_top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!--        Navigation Bar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#page_top" class="navbar-brand" style="font-size:20px;color:#ffb900;">
+                        Aram Galstyan
+                    </a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href ="#about">About</a>
+                        </li>
+                        <li>
+                            <a href ="#tweets">News</a>
+                        </li>
+                        <li>
+                            <a href ="#research">Projects</a>
+                        </li>
+                        <li>
+                            <a href ="#awards">Awards</a>
+                        </li>
+                        <li>
+                            <a href ="#publications">Publications</a>
+                        </li>
+                        <li>
+                            <a href ="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!--        Main Header Cover Image and Title-->
+        <div class="hero_wrapper">
+            <div class="container">
+                <section class="hero_section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Aram Galstyan</h2>
+                            
+                            <p>Research Director, Information Sciences Institute</p>
+                            <p>Research Associate Professor of Computer Science</p>
+                            <p>MINDS Research Group</p>
+                            <br>
+                            <p><i>2000, PhD, Physics, Univ Utah</i></p>
+                            <p><i>1995, Bachelors, Physics, Yerevan State Med Inst Mkhitara Hera</i></p>
+                            <img src="img/logo.png" height="40" weight="100">
+                            <div class="social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-slideshare"></i></a></li>
+                              </ul>
+                            
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="profile_image">
+                                <div  class="ratio img-responsive img-circle" style="background-image: url('img/aram.png');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+        <!--        Section About Us-->
+        <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <article>
+                        <section id = "about" class="text-center">
+                            <h2 class="animated fadeInUp">ABOUT</h2>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Aram Galstyan is a Research Director for Data Science and Machine Learning at the Information Sciences Institute and a Research Associate Professor in the USC Viterbi School of Engineering's Computer Science Department. His current research focuses on different aspects of machine learning, with applications in computational social sciences, forecasting, and bioinfoamtics. His other research interests include ststiatical phsycis of learning and inference, modeling of complex adaptive systems, and learning and adaptation in multi-agent systems.	 </p>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--        Twitter Section-->
+        <section style="background-color:#eee!important">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <article>
+                        <section id = "tweets" class="text-center">
+                            <h2>NEWS</h2>
+                            <h3 class="sub-heading">Lorem ipsum dolor sit amet.</h3>
+                            <div style="padding: 0px 40px;">
+                                <div style="height:420px;width:100%;border:1px solid #ccc;font-family: Georgia, Garamond, Serif;overflow:auto;">
+<!--                                Twitter Embeded Script-->
+                                <a class="twitter-timeline" href="https://twitter.com/aram_galstyan?ref_src=twsrc%5Etfw">Tweets by aram_galstyan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                            </div>
+                            
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        </section>
+         <section id = "research" class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>PROJECTS</h2>
+                            <h3 class="sub-heading">Lorem ipsum dolor sit amet.</h3>
+                            <p>His current research focuses on statistical mechanics based approaches to inference and learning, statistical models of complex networks, and social network analysis. His other research interests include mathematical modeling of complex adaptive systems, emergent coordination in robotic swarms, and learning and adaptation in multi-agent systems.</p>
+                            <div class="row">
+
+                                <div class="col-md-3 col-sm-3 col-xs-6" id="big_mechanism">
+                                    <div class="row text-center">
+
+                                            <div class="col-md-12 project_icon">
+                                                <div class="ratio img-responsive" style="background-image: url('img/cancer.png');"></div>
+                                            </div>
+                                            <div class="col-md-12 section2">
+                                                <p class="people_name">
+                                                    Big Mechanism
+                                                </p>
+                                            </div>
+                                        <div class="col-md-12 section3">
+                                            <p class="people_title">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 section4">
+                                            <a href="big_mechanism.html" target="_blank"><div class="custom-button"><span>Read More</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 col-xs-6" id="safe">
+                                    <div class="row text-center">
+                                            <div class="col-md-12 project_icon">
+                                                <div class="ratio img-responsive" style="background-image: url('img/effect.png');"></div>
+                                            </div>
+                                            <div class="col-md-12 section2">
+                                                <p class="people_name">
+                                                    SAFE
+                                                </p>
+                                            </div>
+                                        <div class="col-md-12 section3">
+                                            <p class="people_title">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 section4">
+                                           <a href="safe.html" target="_blank"> 
+                                            <div class="custom-button"><span>Read More</span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 col-xs-6" id="effect">
+                                    <div class="row text-center">
+                                            <div class="col-md-12 project_icon">
+                                                <div class="ratio img-responsive" style="background-image: url('img/cybersecurity.png');"></div>
+                                            </div>
+                                            <div class="col-md-12 section2">
+                                                <p class="people_name">
+                                                    EFFECT
+                                                </p>
+                                            </div>
+                                        <div class="col-md-12 section3">
+                                            <p class="people_title">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 section4">
+                                            <a href="effect.html" target="_blank">
+                                                <div class="custom-button"><span>Read More</span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 col-xs-6" id="big_mechanism">
+                                    <div class="row text-center">
+
+                                            <div class="col-md-12 project_icon">
+                                                <div class="ratio img-responsive" style="background-image: url('img/teamwork.png');"></div>
+                                            </div>
+                                            <div class="col-md-12 section2">
+                                                <p class="people_name">
+                                                    Next Gen Social Sci
+                                                </p>
+                                            </div>
+                                        <div class="col-md-12 section3">
+                                            <p class="people_title">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 section4">
+                                            <a href="next_gen_social_sci.html" target="_blank"><div class="custom-button"><span>Read More</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!--        Awards Section-->
+        <section style="background-color:#272822;border-bottom: 9px solid #e3bb52;">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <article>
+                        <section id = "awards" class="text-center">
+                            <h2>AWARDS</h2>
+                            <h3 class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            <div class="col-12 sidemenu">
+                            <ul>
+                                <li>
+                                    <span class="item-container">
+                                        <span class="icon"><i class="fa fa-trophy fa-2"></i></span>
+                                        <span class="award_name">2000 American Physical Society Exceptional Student Presentation Award</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="item-container">
+                                        <span class="icon"><i class="fa fa-trophy"></i></span>
+                                        <span class="award_name">2003 Information Sciences Institute Intelligent Systems Division Research Award</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="item-container">
+                                        <span class="icon"><i class="fa fa-trophy"></i></span>
+                                        <span class="award_name">2005 Information Sciences Institute Intelligent Systems Division Research Award</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="item-container">
+                                        <span class="icon"><i class="fa fa-trophy"></i></span>
+                                        <span class="award_name">2011 27th Conference on Uncertainty in Artificial Intelligence Best Paper runner-up</span>
+                                    </span>
+                                </li>
+                            </ul>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <!--        Publications-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <article>
+                    <section id = "publications" class="text-center">
+                        <h2>PUBLICATIONS</h2>
+                        <h3 class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <script src="https://bibbase.org/show?bib=http://www.bibsonomy.org/bib/author/Aram%20Galstyan?items=1000&jsonp=1"></script>
+                    </section>
+                    </article>
+                </div>
+                    </div>
+        </div>
+        
+        <!--        Contact Section-->
+        <section style="background-color:#272822;">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <article>
+                        <section id = "contact" class="text-center">
+                            <h2>CONTACT</h2>
+                            <div class="col-12 contact-info">
+                            <ul>
+                                <li>
+                                    <span class="item-container">
+                                        <span class="icon"><i class="fa fa-envelope"></i></span>
+                                        <span class="item-name">galstyan@isi.edu</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="item-container">
+                                        <span class="icon"><i class="fa fa-phone"></i></span>
+                                        <span class="item-name">(310) 448-9183</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <p>Office Information Science Institute</p>
+                                    <p>4676 Admiralty Way</p>
+                                    <p>Marina Del Rey CA 90292</p>
+                                    <p>USC Mail Code: 1454</p>
+                                </li>
+                            </ul>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="container-fluid bg-4 text-center" style="padding-top:0px;padding-bottom:0px;">
+            <p style="text-align:center"><a href="#page_top">Back to Top</a></p>
+            <p style="text-align:center">© 2018 The University of Southern California</p>
+        </footer>
+    </body>
+</html>

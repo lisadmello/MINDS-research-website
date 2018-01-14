@@ -1,0 +1,83 @@
+.hero_wrapper{
+    background-color:#272822;
+}
+.hero_section{
+    position: relative;
+    padding-top: 72px;
+    z-index: 5;
+}   
+.hero_section h2{
+    color: whitesmoke;
+}
+.hero_section h2:after{
+    background:none;
+}
+.profile_image{
+    margin:0px 120px;
+}
+.sidemenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 50px;
+}
+.sidemenu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    word-wrap: break-word;
+    color: #4b555e;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 0 10px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.icon{
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 0;
+    color:darkorange;
+}
+.item-name{
+    display: inline-block;
+    margin-left: 6px;
+}
+.contact-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 50px;
+}
+.contact-info li, .contact-info p{
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    color: #aba2a2;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 0 10px;
+    display: block;
+}
+#contact h2, #contact .icon{
+    color: #e3bb52;
+}
+
+#awards h2{
+    color: #e3bb52;
+}
+#awards h2:after{
+    background: white;
+}
+#awards h3{
+    color: #969090;
+}
+#awards .icon{
+    color: #e3bb52;
+}
+.award_name{
+    color:whitesmoke;
+}
+    
