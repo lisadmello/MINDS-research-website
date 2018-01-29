@@ -1,11 +1,21 @@
-.hero_wrapper{
-    background-color:#272822;
+.profile{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.group{
+    font-style: italic;
+    color: #ffb900;
 }
 .hero_section{
     position: relative;
     padding-top: 72px;
     z-index: 5;
-}   
+}
+.header-para{
+    font-size: 18px;
+    color:;
+    text-align:center;
+}
 .hero_section h2{
     color: whitesmoke;
 }
@@ -15,6 +25,17 @@
 .profile_image{
     margin:0px 120px;
 }
+.parallax { 
+    /* The image used */
+    background-image: url("img/back_cover.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sidemenu ul {
     list-style-type: none;
     margin: 0;
